@@ -1,0 +1,33 @@
+abdelrahman salah
+20216695
+
+
+#include <iostream>
+#include <algorithm> // for std::sort
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    // Store the input values in an array
+    int arr[] = {a, b, c};
+
+    // Sort the array in ascending order
+    sort(arr, arr + 3);
+
+    // Print the values in ascending order
+    for (int i = 0; i < 3; i++) {
+        cout << arr[i] << endl;
+    }
+
+    // Print a blank line
+    cout << endl;
+
+    // Print the values in the sequence they were read
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+
+   
+}
