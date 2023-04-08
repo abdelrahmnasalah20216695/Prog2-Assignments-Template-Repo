@@ -1,0 +1,22 @@
+abdelrahman salah
+20216695
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x, y;
+    cin >> x >> y;
+
+    int sum = x + y;
+    int product = x * y;
+    int difference = x - y;
+
+    cout << x << " + " << y << " = " << sum << endl;
+    cout << x << " * " << y << " = " << product << endl;
+    cout << x << " - " << y << " = " << difference ;
+
+}
+
