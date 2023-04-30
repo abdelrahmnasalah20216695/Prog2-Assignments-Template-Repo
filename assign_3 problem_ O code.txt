@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+
+            // Ensure that x is odd
+            if (x % 2 == 0) {
+                x++;
+            }
+
+            // Ensure that y is odd
+            if (y % 2 == 0) {
+                y--;
+            }
+
+            int sum = 0;
+            for (int i = x + 2; i < y; i += 2) {
+                sum += i;
+            }
+            System.out.println(sum);
+        }
+    }
+}
